@@ -10,9 +10,7 @@ import { Product, products } from '../products';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  product: Product | undefined;
+  /*...*/
 
 }
