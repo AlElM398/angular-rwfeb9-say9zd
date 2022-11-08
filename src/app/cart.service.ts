@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
-import { Product } from './products'; //import product interface
+import { Product } from './products'; 
+//import product interface
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -7,6 +8,9 @@ import { Injectable } from '@angular/core';
 })
 export class CartService {
   items: Product[] = []; //define an items property to store the array of the current products in the cart
+
+  constructor(private http: HttpClient)
+  {}
 
   //define methods to add items to the cart
   addToCart(product: Product) {
