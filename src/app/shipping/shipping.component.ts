@@ -8,4 +8,7 @@ import { CartService } from '../cart.service';
   templateUrl: './shipping.component.html',
   styleUrls: ['./shipping.component.css'],
 })
-export class ShippingComponent {}
+export class ShippingComponent {
+
+  constructor(private cartService: CartService) {}
+}
